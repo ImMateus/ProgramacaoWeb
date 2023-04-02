@@ -1,0 +1,66 @@
+/*
+CURSO DE ENGENHARIA DE SOFTWARE - UNIEVANGELICA
+DISCIPLINA DE PROGRAMAÇÃO WEB
+DEV: Mateus Guimarães Leal - 2012148
+02/04/2023
+
+Mudar a cor de fundo da pagina e a cor do texto*/
+body {
+    background-color: rgb(86, 143, 86);
+    color: beige;
+  }
+/*Chama o id que dei para o paragrafo, e muda o tamanho da fonte*/
+#para1 {
+    font-size: 20px;
+   }
+/*Muda o ol, tirando os números da lista*/
+ol { 
+    list-style-type: none;
+}
+/*Altera o paragrafo com tal id, aumentando o tamando da fonte e centralizando ele*/
+#escbio{
+    text-align: center;
+    font-size: 25px;
+}
+/*Criar borda no campo de texto*/
+#text1{
+    border-radius: 2px;
+}
+/*Muda a classe de tabelas correspondentes*/
+.tabelass1{
+    background-color: rgb(11, 49, 79);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: black;
+}
+/*Muda a tabela com o id 2*/
+#tabela2{
+    border-style: double;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Muda a tabela com o id 3*/
+#tabela3{
+    border-style: dashed;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Muda a tabela com o id 1*/
+#tabela1{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Muda o link, deichando ele, depois de visualizado, com a mesma cor do texto 2*/
+a{
+    color: beige;
+    border-style: double;
+    border-color: black;
+}
+a:visited{
+    color: beige;
+}
+/*Muda a tabela com o id 4*/
+#tabela4{
+    border-style: dashed;
+    border-color: black;
+}
