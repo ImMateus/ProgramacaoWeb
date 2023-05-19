@@ -1,0 +1,138 @@
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Mateus Guimarães Leal - 2110486
+DATA: 19/05/2023
+
+
+Questões discursivas 1VA:
+
+1-
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário e Tabelas</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		
+		label {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		
+		input[type="text"], select {
+			padding: 10px;
+			font-size: 16px;
+			border-radius: 5px;
+			border: 1px solid gray;
+			margin-bottom: 20px;
+			width: 250px;
+		}
+		
+		table {
+			margin-top: 50px;
+			border-collapse: collapse;
+			width: 100%;
+			max-width: 600px;
+			font-size: 18px;
+		}
+		
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid gray;
+		}
+		
+		ul {
+			list-style: none;
+			margin-top: 50px;
+			font-size: 18px;
+		}
+		
+		li {
+			margin-bottom: 10px;
+		}
+		
+		a {
+			text-decoration: none;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome">
+		
+		<label for="pais">País:</label>
+		<select id="pais" name="pais">
+			<option value="brasil">Brasil</option>
+			<option value="eua">Estados Unidos</option>
+			<option value="portugal">Portugal</option>
+			<option value="espanha">Espanha</option>
+		</select>
+	</form>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Idade</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>João</td>
+				<td>25 anos</td>
+			</tr>
+			<tr>
+				<td>Maria</td>
+				<td>30 anos</td>
+			</tr>
+			<tr>
+				<td>Pedro</td>
+				<td>22 anos</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<table>
+		<tr>
+			<td>
+				<ul>
+					<li>Lorem ipsum dolor sit amet</li>
+				</ul>
+			</td>
+			<td>
+				<a href="#">Clique aqui</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+
+
+2-
+
+function adicionarItem() {
+  // Obter o valor do campo de texto
+  var item = document.getElementById("novoItem").value;
+  
+  // Criar um novo elemento <li> com o valor do campo de texto
+  var novoElemento = document.createElement("li");
+  var textoNovoElemento = document.createTextNode(item);
+  novoElemento.appendChild(textoNovoElemento);
+  
+  // Adicionar o novo elemento à lista
+  var lista = document.getElementById("lista");
+  lista.appendChild(novoElemento);
+  
+  // Limpar o campo de texto para permitir que o usuário insira um novo item
+  document.getElementById("novoItem").value = "";
+}
